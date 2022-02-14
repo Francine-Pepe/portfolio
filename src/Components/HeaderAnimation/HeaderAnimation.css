@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  40%,
+  60% {
+    transform: translate3d(0, 50%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+.animated-title {
+  color: #222;
+  font-family: "Roboto Slab";
+  font-weight: 200;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+/* 
+.dot1,
+.dot2,
+.dot3,
+.dot4,
+.dot5,
+.dot6,
+.dot7 {
+  background-color: #f8b23d;
+  border-radius: 50%;
+  display: flex;
+}
+
+.dot1 {
+  height: 28px;
+  width: 28px;
+  display: flex;
+}
+.dot2 {
+  height: 25px;
+  width: 25px;
+  display: flex;
+}
+.dot3 {
+  height: 22px;
+  width: 22px;
+}
+.dot4 {
+  height: 19px;
+  width: 19px;
+}
+.dot5 {
+  height: 16px;
+  width: 16px;
+}
+.dot6 {
+  height: 13px;
+  width: 13px;
+}
+.dot7 {
+  height: 10px;
+  width: 10px;
+} */
+
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: flex;
+}
+.animated-title > div.text-top {
+  border-bottom: 1vmin solid #153b61;
+  top: 0;
+  
+}
+.animated-title > div.text-top div {
+  animation: showTopText 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span:first-child {
+  color: #5987b6;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+  margin-left: 22px;
+  color: #153b61;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 0.5s;
+  animation-delay: 1.75s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}

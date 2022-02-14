@@ -1,0 +1,7 @@
+.navbar_header {
+    width: 50%;
+    height: 10%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #44CFCB;
+}
