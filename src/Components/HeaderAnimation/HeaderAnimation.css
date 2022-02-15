@@ -26,7 +26,7 @@
   height: 90vmin;
   left: 50%;
   position: absolute;
-  top: 50%;
+  top: 60%;
   transform: translate(-50%, -50%);
   width: 90vmin;
 }
@@ -114,4 +114,61 @@
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+
+.self_description {
+  position: absolute;
+  top: 95%;
+  left: 8%;
+}
+
+.self_description p {
+  font-family: 'Roboto Slab';
+  font-size: 25px;
+  text-align: center;
+  color: #153B61;
+}
+
+.photo_image {
+  width: 30vw;
+  height: 60vh;
+  border-radius: 50%;
+  background-image: url('./../Images/photo_Francine.png');
+  background-position: center;
+  position: relative;
+  left: 60%;
+  margin-top: 5%;
+  box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671);
+}
+
+.my_work {
+  position: relative;
+  top: 100%;
+  font-family: 'Roboto Slab';
+  font-size: 25px;
+  text-align: center;
+  color: #153B61;
+  padding-top: 15%;
+}
+
+.my_work img {
+  position: relative;
+  left: 30%;
+
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1200px) {
+  .animated-title {
+    color: #222;
+    font-family: "Roboto Slab";
+    font-weight: 200;
+    height: 90vmin;
+    left: 30%;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+  }
 }
