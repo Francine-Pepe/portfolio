@@ -8,6 +8,7 @@ body {
     justify-content: flex-end;
     margin-top: 3%;
     
+    
 }
 .navbar_header {
     min-width: 50vw;
@@ -17,11 +18,14 @@ body {
     border-bottom-left-radius: 20px;
     justify-content: space-evenly;
     box-shadow: 10px 10px 5px  #86c5c3;
+    
+   
 }
 
 .header_navigation {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 ul {

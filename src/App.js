@@ -1,6 +1,7 @@
 import './App.css';
-import HeaderAnimation from './Components/HeaderAnimation/HeaderAnimation';
+// import HeaderAnimation from './Components/HeaderAnimation/HeaderAnimation';
 import NavBar from './Components/NavBar/NavBar';
+import Projects from './Components/Projects/Projects';
 
 
 function App() {
@@ -9,7 +10,8 @@ function App() {
       <header className="App-header">
         
         <NavBar />
-        <HeaderAnimation />
+        {/* <HeaderAnimation /> */}
+        <Projects />
       </header>
     </div>
   );

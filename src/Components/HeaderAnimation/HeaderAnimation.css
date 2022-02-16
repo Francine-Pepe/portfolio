@@ -130,8 +130,8 @@
 }
 
 .photo_image {
-  width: 30vw;
-  height: 60vh;
+  width: 450px;
+  height: 450px;
   border-radius: 50%;
   background-image: url('./../Images/photo_Francine.png');
   background-position: center;
