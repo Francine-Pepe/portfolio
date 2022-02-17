@@ -11,7 +11,7 @@ body {
     
 }
 .navbar_header {
-    min-width: 50vw;
+    min-width: 50rem;
     height: auto;
     display: flex;
     background-color: #44CFCB;
@@ -25,7 +25,7 @@ body {
 .header_navigation {
     display: flex;
     justify-content: space-evenly;
-    
+    align-items: center;
 }
 
 ul {
@@ -44,9 +44,10 @@ li {
 }
 
 li a {
+    font-size: 1.5rem;
     text-decoration: none;
     font-family: 'Roboto Slab';
-    font-weight: 400;
+    color: #153B61;
 }
 
 .social_media  {
@@ -72,11 +73,11 @@ li a {
 
 @media only screen and (max-width: 620px) {
     .navbar_header {
-        min-width: auto;
+        min-width: 50rem;
         height: auto;
         display: flex;
         background-color: #44CFCB;
         border-bottom-left-radius: 0;
-        
+        margin-right: 0;
     }
 }

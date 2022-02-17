@@ -1,22 +1,19 @@
 import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Card from "@mui/material/Card";
-import CardHeader from "@mui/material/CardHeader";
 import CardMedia from "@mui/material/CardMedia";
 import CardContent from "@mui/material/CardContent";
 import CardActions from "@mui/material/CardActions";
 import Collapse from "@mui/material/Collapse";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import { red } from "@mui/material/colors";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
 import bespoke from "./../Images/BF_Logo.png";
 import photopedia from "./../Images/photopedia_logo_transparent.png";
 import healthyLife from "./../Images/Healthy Life-logos_transparent.png";
 import easyPeasy from "./../Images/easy_peasy-logo_transparent.png";
 import './Projects.css';
-import Paper from "@mui/material/Paper";
+import { Icon } from '@iconify/react';
 
 
 const ExpandMore = styled((props) => {
@@ -44,6 +41,8 @@ export default function Projects() {
       image: bespoke,
       github: "https://github.com/Francine-Pepe/bespokefashion",
       link: "https://bespokefashion.netlify.app/",
+          
+      
     },
     {
       name: "Photopedia",
@@ -55,7 +54,7 @@ export default function Projects() {
     {
       name: "Healthy Life",
       description:
-        "A place that reunites everything to have a good and healthy life",
+        "A place that brings together everything for a good and healthy life",
       image: healthyLife,
       github: "https://github.com/jennyy89/healthylife",
       link: "",
@@ -72,7 +71,11 @@ export default function Projects() {
   
   return (
     <>
-    
+    <div className="project_container">
+      <div className="project_title">
+      <Icon icon="ic:outline-computer" color="white" width="40" height="28" /><h3>Projects</h3>
+      </div>
+    </div>
     <div className="cards_container">
     
       <div className="card_box">
@@ -84,7 +87,7 @@ export default function Projects() {
                     gap:10 ,
                     margin:10,
                     padding: 10,
-                    border: 1,
+                    border: 0.5,
                   }}
         >
         {projects.map ((projects,id) =>
@@ -100,6 +103,7 @@ export default function Projects() {
             <Typography className="cards_title" fontSize='1.8rem' color="text.secondary" fontFamily='Roboto Slab' >
               {projects.name}
             </Typography> 
+            <hr className="line"/>
             <CardMedia
               component="img"
               height="194"
@@ -107,15 +111,20 @@ export default function Projects() {
               alt="project name"
             />
             <CardContent>
-              <Typography className="cards_text" fontSize='1.1rem' color="text.secondary"
+              <Typography className="cards_text" fontSize='0.9rem' color="text.secondary"
                 sx={{ 
                   fontFamily: 'Roboto Slab',
+                  
                   }}
               >
                 {projects.description}
               </Typography>
+              <hr className="line"/>
             </CardContent>
             <CardActions disableSpacing>
+              <div className="technologies_title" >
+                <h4>Technologies used:</h4>
+              </div>
               <ExpandMore
                 expand={expanded}
                 onClick={handleExpandClick}
@@ -127,7 +136,7 @@ export default function Projects() {
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
               <CardContent>
-                
+                {projects.technologies}
               </CardContent>
             </Collapse>
             
