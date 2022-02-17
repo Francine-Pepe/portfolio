@@ -154,7 +154,10 @@
 .my_work img {
   position: relative;
   left: 30%;
+}
 
+.my_work a {
+  color: #153B61;
 }
 
 /* Media Queries */

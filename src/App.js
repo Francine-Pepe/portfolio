@@ -1,18 +1,17 @@
 import './App.css';
-// import HeaderAnimation from './Components/HeaderAnimation/HeaderAnimation';
+import HeaderAnimation from './Components/HeaderAnimation/HeaderAnimation';
 import NavBar from './Components/NavBar/NavBar';
 import Projects from './Components/Projects/Projects';
-
+// import NavBar2 from './Components/NavBar/NavBar2'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        
+      
+        {/* <NavBar2 /> */}
         <NavBar />
-        {/* <HeaderAnimation /> */}
+        <HeaderAnimation />
         <Projects />
-      </header>
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.navbar {
+    min-width: 50rem;
+    height: auto;
+    display: flex;
+    background-color: #44CFCB;
+    border-bottom-left-radius: 20px;
+    justify-content: flex-start;
+    box-shadow: 10px 10px 5px  #86c5c3;
+}
+
+.navigation_container {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+
