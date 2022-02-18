@@ -21,20 +21,18 @@ const [value, setValue] = React.useState('recents');
         <div className="navigation_container">
             <div className="navbar_header">
                 <div className="header_navigation">
-                <BottomNavigation sx={{ width: 350, height: 80, backgroundColor: '#44CFCB'  }} value={value} onChange={handleChange}>
+                <BottomNavigation sx={{ width: 300, height: 80, backgroundColor: '#44CFCB'  }} value={value} onChange={handleChange}>
                     <BottomNavigationAction 
                     sx={{
                         "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
                           color: "#153B61",
-                          fontFamily: 'Roboto Slab'
-                        }
+                          fontFamily: 'Roboto Slab',
+                          }
                      }}
                         label="Projects"
                         value="projects"
-                        icon={<Icon icon="ic:outline-computer" color="#F8F8F8" width="50" height="50" />}
-                        
-                    />
-                    
+                        icon={<Icon icon="ic:outline-computer" color="#F8F8F8" width="40" height="40" />}
+                        />
                     <BottomNavigationAction
                     sx={{
                         "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
@@ -44,9 +42,8 @@ const [value, setValue] = React.useState('recents');
                      }}
                         label="Skills"
                         value="skills"
-                        icon={<Icon icon="et:gears" color="#f8f8f8" width="50" height="50" />}
-                        
-                    />
+                        icon={<Icon icon="et:gears" color="#f8f8f8" width="40" height="40" />}
+                        />
                     <BottomNavigationAction
                     sx={{
                         "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
@@ -56,10 +53,21 @@ const [value, setValue] = React.useState('recents');
                      }}
                         label="Contact"
                         value="contact"
-                        icon={<Icon icon="clarity:email-line" color="#f8f8f8" width="50" height="50" />}
-                    />
-                    
+                        icon={<Icon icon="clarity:email-line" color="#f8f8f8" width="40" height="40" />}
+                        />
+                        <BottomNavigationAction
+                    sx={{
+                        "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
+                          color: "#153B61",
+                          fontFamily: 'Roboto Slab'
+                        }
+                     }}
+                        label="Resumé"
+                        value="resumé"
+                        icon={<Icon icon="fluent:document-one-page-20-regular" color="#f8f8f8" width="40" height="40" />}
+                        />
                     </BottomNavigation>
+                    
                     {/* <ul>
                         <li><NavLink to="/">Home</NavLink></li>
                         <li><NavLink to="/">Projects</NavLink></li>

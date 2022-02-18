@@ -41,8 +41,7 @@ export default function Projects() {
       image: bespoke,
       github: "https://github.com/Francine-Pepe/bespokefashion",
       link: "https://bespokefashion.netlify.app/",
-          
-      
+      technologies: 'React JS  |  MongoDB  |  Node JS  |  Express  |  Material UI  |  React Bootstrap  |  Adobe XD'  
     },
     {
       name: "Photopedia",
@@ -50,6 +49,7 @@ export default function Projects() {
       image: photopedia,
       github: "https://github.com/TheCodingBrie/Photopedia",
       link: "",
+      technologies: 'React JS  |  MongoDB  |  Node JS  |  Express  |  Material UI  |  React Bootstrap  |  Adobe XD'
     },
     {
       name: "Healthy Life",
@@ -58,6 +58,7 @@ export default function Projects() {
       image: healthyLife,
       github: "https://github.com/jennyy89/healthylife",
       link: "",
+      technologies: 'React JS |  React Bootstrap  |  Contentful  |  Adobe XD'
     },
     {
       name: "Easy Peasy",
@@ -65,6 +66,8 @@ export default function Projects() {
       image: easyPeasy,
       github: "https://github.com/garciamarin/Easy-Peasy",
       link: "",
+      technologies: 'HTML 5 |  CSS 3  |  Bootstrap  |  Adobe XD'
+
     },
   ];
 
@@ -73,7 +76,7 @@ export default function Projects() {
     <>
     <div className="project_container">
       <div className="project_title">
-      <Icon icon="ic:outline-computer" color="white" width="40" height="28" /><h3>Projects</h3>
+        <Icon icon="ic:outline-computer" color="white" width="40" height="30" /><h3>Projects</h3>
       </div>
     </div>
     <div className="cards_container">
@@ -135,7 +138,7 @@ export default function Projects() {
               </ExpandMore>
             </CardActions>
             <Collapse in={expanded} timeout="auto" unmountOnExit>
-              <CardContent>
+              <CardContent className="card_content">
                 {projects.technologies}
               </CardContent>
             </Collapse>
@@ -144,6 +147,7 @@ export default function Projects() {
           
         </div>
         )}
+        
       </Card>
       
       </div>

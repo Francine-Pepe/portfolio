@@ -2,16 +2,18 @@ import './App.css';
 import HeaderAnimation from './Components/HeaderAnimation/HeaderAnimation';
 import NavBar from './Components/NavBar/NavBar';
 import Projects from './Components/Projects/Projects';
-// import NavBar2 from './Components/NavBar/NavBar2'
+import Skills from './Components/Skills/Skills';
+import Contact from './Components/Contact/Contact';
 
 function App() {
   return (
     <div className="App">
       
-        {/* <NavBar2 /> */}
         <NavBar />
         <HeaderAnimation />
         <Projects />
+        <Skills />
+        <Contact />
     </div>
   );
 }

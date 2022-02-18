@@ -16,6 +16,7 @@ body {
     display: flex;
     background-color: #44CFCB;
     border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     justify-content: space-evenly;
     box-shadow: 10px 10px 5px  #86c5c3;
     
@@ -27,6 +28,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
 }
+
 
 ul {
     display: flex;
@@ -49,7 +51,14 @@ li a {
     font-family: 'Roboto Slab';
     color: #153B61;
 }
+.icon {
+    cursor: pointer;
+}
 
+.icon:hover {
+    background-color: #153B61;
+    
+}
 .social_media  {
     display: flex;
     align-items: center;
