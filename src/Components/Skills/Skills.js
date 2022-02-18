@@ -2,12 +2,10 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import "./Skills.css";
-import { Card, Stack, Divider } from "@mui/material";
+import { Card, Stack } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Icon } from "@iconify/react";
-import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
+
 
 export default function Skills() {
   const Item = styled(Paper)(({ theme }) => ({
@@ -17,21 +15,6 @@ export default function Skills() {
     textAlign: "center",
     color: theme.palette.text.secondary,
   }));
-
-  //   Popover bellow
-
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
 
   const skillsFrontend = [
     {
@@ -102,27 +85,27 @@ export default function Skills() {
     
   ]
 
-  // end Popover
-
   return (
     <>
-      <div className="project_container_skills">
-        <div className="project_title">
-          <Icon icon="et:gears" color="#f8f8f8" width="40" height="40" />
+      <header className="contact_header">
+          <hr />
+          <Icon icon="et:gears" color="#5987b6" width="50" height="50" />
           <h3>Skills</h3>
-        </div>
-      </div>
-      <div className="skills_container">
+          <hr />
+      </header>
+      
+      <Box  className="skills_container">
         <div className="card_box_skills">
-          <Card
+          <Card 
             sx={{
+              
               p: 1,
               display: "grid",
               gap: 10,
               margin: 10,
               padding: 10,
-              border: 0.5,
-              width: '75vw'
+              border: 'none',
+              
             }}
           >
             <div className="frontend_title">
@@ -200,7 +183,7 @@ export default function Skills() {
           
         </div>
         
-      </div>
+      </Box>
       
     </>
   );

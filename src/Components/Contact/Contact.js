@@ -1,63 +1,47 @@
-import React from 'react';
-import { Formik } from 'formik';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import { Container } from '@mui/material';
+import './Contact.css';
+import { Icon } from '@iconify/react';
 
-const Basic = () => (
-  <div>
-    <h1>Anywhere in your app!</h1>
-    <Formik
-      initialValues={{ email: '', password: '' }}
-      validate={values => {
-        const errors = {};
-        if (!values.email) {
-          errors.email = 'Required';
-        } else if (
-          !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-        ) {
-          errors.email = 'Invalid email address';
-        }
-        return errors;
-      }}
-      onSubmit={(values, { setSubmitting }) => {
-        setTimeout(() => {
-          alert(JSON.stringify(values, null, 2));
-          setSubmitting(false);
-        }, 400);
-      }}
-    >
-      {({
-        values,
-        errors,
-        touched,
-        handleChange,
-        handleBlur,
-        handleSubmit,
-        isSubmitting,
-        /* and other goodies */
-      }) => (
-        <form onSubmit={handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.email}
-          />
-          {errors.email && touched.email && errors.email}
-          <input
-            type="password"
-            name="password"
-            onChange={handleChange}
-            onBlur={handleBlur}
-            value={values.password}
-          />
-          {errors.password && touched.password && errors.password}
-          <button type="submit" disabled={isSubmitting}>
-            Submit
-          </button>
+
+export default function Contact () {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_5gpnfnk', 'template_sgmp2xj', e.target, 'user_YeUwC6WQsK1xiMGVBrKzC')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+          alert('Thanks for contacting me! I will reply you soon! 📧') 
+          
+  };
+
+  return (
+    <>
+      <header className="contact_header">
+        <hr />
+          <Icon icon="clarity:email-line" color="#5987b6" width="50" height="50" />
+          <h3>Contact</h3>
+        <hr />
+      </header>
+      <Container fluid className="contact_container mt-5">                
+        <form  className="form_box" ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
         </form>
-      )}
-    </Formik>
-  </div>
-);
+      </Container>
+    </>
+  );
+};
 
-export default Basic;
