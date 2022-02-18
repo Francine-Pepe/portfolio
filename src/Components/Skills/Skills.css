@@ -4,6 +4,8 @@ body {
     background-color: #F8F8F8;
 }
 
+
+
 .skills_container {
     width: 100%;
     height: auto;
@@ -15,8 +17,9 @@ body {
 }
 
 .card_box_skills {
+    width: 100%;
     height: auto;
-    border: 1px;
+    border: none;
     display: flex;
     justify-content: center;
     margin: 0;

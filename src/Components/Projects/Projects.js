@@ -74,11 +74,12 @@ export default function Projects() {
   
   return (
     <>
-    <div className="project_container">
-      <div className="project_title">
-        <Icon icon="ic:outline-computer" color="white" width="40" height="30" /><h3>Projects</h3>
-      </div>
-    </div>
+    <header className="contact_header" style={{ marginTop: '20rem'}}>
+          <hr />
+          <Icon icon="ic:outline-computer" color="#5987b6" width="50" height="50" />
+          <h3>Projects</h3>
+          <hr />
+      </header>
     <div className="cards_container">
     
       <div className="card_box">
@@ -90,7 +91,7 @@ export default function Projects() {
                     gap:10 ,
                     margin:10,
                     padding: 10,
-                    border: 0.5,
+                    border: 'none',
                   }}
         >
         {projects.map ((projects,id) =>

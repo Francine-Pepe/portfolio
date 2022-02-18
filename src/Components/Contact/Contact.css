@@ -1,0 +1,39 @@
+body {
+    width: 100%;
+    height: auto;
+}
+
+.contact_header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_header h3 {
+    font-family: 'Roboto Slab';
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+}
+.contact_header hr {
+    width: 30%;
+    height: 1px;
+    background-color: #44CFCB;
+    border: none;
+}
+
+.contact_container {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_box {
+    width: 50vw;
+    display: flex;
+    
+    flex-direction: column;
+}
