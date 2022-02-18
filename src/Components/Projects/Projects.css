@@ -10,8 +10,9 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: 20rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
+
 .project_title {
     width: 25rem;
     height: 8vh;
@@ -19,6 +20,7 @@ body {
     margin-top: 50px;
     margin-right: 0;
     border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,7 +41,6 @@ body {
     width: 90vw;
     height: auto;
     flex-direction: row;
-    
 }
 
 .card_box {
@@ -82,4 +83,10 @@ body {
 .technologies_title h4 {
     font-family: 'Roboto Slab';
     color: gray;
+}
+
+.card_content {
+    font-family: 'Roboto Slab';
+    display: flex;
+    
 }
