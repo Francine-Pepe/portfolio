@@ -4,6 +4,7 @@ import { Icon } from '@iconify/react';
 // import { NavLink } from 'react-router-dom';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import { Link } from '@mui/material';
 
 
 
@@ -22,6 +23,17 @@ const [value, setValue] = React.useState('recents');
             <div className="navbar_header">
                 <div className="header_navigation">
                 <BottomNavigation sx={{ width: 300, height: 80, backgroundColor: '#44CFCB'  }} value={value} onChange={handleChange}>
+                <BottomNavigationAction
+                    sx={{
+                        "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
+                          color: "#153B61",
+                          fontFamily: 'Roboto Slab'
+                        }
+                     }}
+                        label="About"
+                        value="about"
+                        icon={<Icon icon="maki:information" color="#f8f8f8" width="40" height="40" />}
+                        />                    
                     <BottomNavigationAction 
                     sx={{
                         "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
@@ -31,7 +43,7 @@ const [value, setValue] = React.useState('recents');
                      }}
                         label="Projects"
                         value="projects"
-                        icon={<Icon icon="ic:outline-computer" color="#F8F8F8" width="40" height="40" />}
+                        icon={<Link to="./Projects"><Icon icon="ic:outline-computer" color="#F8F8F8" width="40" height="40" /></Link>}
                         />
                     <BottomNavigationAction
                     sx={{
@@ -55,17 +67,7 @@ const [value, setValue] = React.useState('recents');
                         value="contact"
                         icon={<Icon icon="clarity:email-line" color="#f8f8f8" width="40" height="40" />}
                         />
-                        <BottomNavigationAction
-                    sx={{
-                        "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
-                          color: "#153B61",
-                          fontFamily: 'Roboto Slab'
-                        }
-                     }}
-                        label="Resumé"
-                        value="resumé"
-                        icon={<Icon icon="fluent:document-one-page-20-regular" color="#f8f8f8" width="40" height="40" />}
-                        />
+                        
                     </BottomNavigation>
                     
                     {/* <ul>

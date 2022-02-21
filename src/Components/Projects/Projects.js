@@ -74,7 +74,7 @@ export default function Projects() {
   
   return (
     <>
-    <header className="contact_header" style={{ marginTop: '20rem'}}>
+    <header className="contact_header" style={{ marginTop: '16rem'}}>
           <hr />
           <Icon icon="ic:outline-computer" color="#5987b6" width="50" height="50" />
           <h3>Projects</h3>
