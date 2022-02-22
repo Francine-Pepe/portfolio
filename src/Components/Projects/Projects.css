@@ -8,24 +8,17 @@ body {
     background-color: #F8F8F8;
 }
 
-
-.cards_container {
-    display: flex;
-    align-items: center;
-    width: 90vw;
-    height: auto;
-    flex-direction: row;
-}
-
 .card_box {
     display: flex;
     justify-content: center;
-    margin: 0;
-    
+    margin-bottom: -4rem;
+    margin-top: -4rem;
+    text-align: center;
+    width: 100vw;
 }
 
 .cards {
-    width: 346px;
+    width: 21rem;
     height: auto;
     
 }
@@ -52,6 +45,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
+    
 }
 
 .technologies_title h4 {
@@ -62,5 +56,22 @@ body {
 .card_content {
     font-family: 'Roboto Slab';
     display: flex;
+}
+
+.visit_button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #FFA000;
+    font-family: 'Roboto Slab';
+    border: none;
+    border-radius: 5px;
+    margin: 1rem;
+    font-weight: 800;
     
+}
+
+.visit_button a {
+    color: #F8F8F8;
+    text-decoration: none;
+    cursor: pointer;
 }

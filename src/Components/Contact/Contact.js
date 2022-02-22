@@ -46,11 +46,11 @@ export default function Contact () {
         }}
       
       >   
-        <div className='postit_text'>
+        {/* <div className='postit_text'>
           <p>Did you enjoy my work <br /> and would <br />like to develop a project?<br />Just drop me <br /> a line! <br /> Francine 🙂</p>
           
         </div>
-        <img className="postit" src={Postit} alt="postit" width="500" height="500" />
+        <img className="postit" src={Postit} alt="postit" width="500" height="500" /> */}
         
         <form  className="form_box" ref={form} onSubmit={sendEmail}>
           <label>Name</label>

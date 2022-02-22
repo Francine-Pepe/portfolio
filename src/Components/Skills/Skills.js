@@ -89,17 +89,22 @@ export default function Skills() {
     <>
       <header className="contact_header">
           <hr />
-          <Icon icon="et:gears" color="#5987b6" width="50" height="50" />
+          <Icon icon="la:pencil-ruler" color="#5987b6" width="50" height="50" />
           <h3>Skills</h3>
           <hr />
       </header>
       
-      <Box  className="skills_container">
+      <Box  className="skills_container"
+        sx={{ flexWrap: 'wrap',
+              display: 'flex'
+      }}
+      
+      >
         <div className="card_box_skills">
           <Card 
             sx={{
               
-              p: 1,
+              p: 3,
               display: "grid",
               gap: 10,
               margin: 10,
