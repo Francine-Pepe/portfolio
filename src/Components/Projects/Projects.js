@@ -16,6 +16,8 @@ import './Projects.css';
 import { Icon } from '@iconify/react';
 
 
+
+
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -37,11 +39,12 @@ export default function Projects() {
   const projects = [
     {
       name: "Bespoke Fashion",
-      description: "Here the customer will be able to custumize your own outfit, choosing the design, prints or colors.",
+      description: "Here the customer will be able to choose the design, prints or colors.",
       image: bespoke,
       github: "https://github.com/Francine-Pepe/bespokefashion",
       link: "https://bespokefashion.netlify.app/",
-      technologies: 'React JS  |  MongoDB  |  Node JS  |  Express  |  Material UI  |  React Bootstrap  |  Adobe XD'  
+      technologies: 'React JS  |  MongoDB  |  Node JS  |  Express  |  Material UI  |  React Bootstrap  |  Adobe XD',
+        
     },
     {
       name: "Photopedia",
@@ -82,7 +85,7 @@ export default function Projects() {
       </header>
     <div className="cards_container">
     
-      <div className="card_box">
+      <div className="card_box" >
       
         <Card sx={{ 
                     p: 2,
@@ -124,10 +127,12 @@ export default function Projects() {
                 {projects.description}
               </Typography>
               <hr className="line"/>
+              <button className="visit_button"><a href={projects.link} target="_blank" >VISIT</a></button>
+              <button className="visit_button"><a href={projects.github} target="_blank">REPO</a></button>
             </CardContent>
             <CardActions disableSpacing>
               <div className="technologies_title" >
-                <h4>Technologies used:</h4>
+                <h4>This Project was made with:</h4>
               </div>
               <ExpandMore
                 expand={expanded}
@@ -142,6 +147,7 @@ export default function Projects() {
               <CardContent className="card_content">
                 {projects.technologies}
               </CardContent>
+                   
             </Collapse>
             
           </Card> 

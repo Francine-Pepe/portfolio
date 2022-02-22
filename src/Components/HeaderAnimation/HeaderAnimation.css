@@ -142,7 +142,7 @@
   position: relative;
   left: 60%;
   margin-top: 5%;
-  box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671);
+  /* box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671); */
 }
 
 .my_work {

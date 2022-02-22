@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+.sticker_container {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.sticker_container hr {
+    height: 1px;
+    background-color: #44CFCB;
+    border: none;
+}
+.sticker_paper {
+  width: 87vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.snote {
+  max-width: 80vw;
+  display: flex;
+  justify-content: center;
+}
+
+.snote h2,
+p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.snote ul,
+li {
+  list-style: none;
+}
+
+.snote ul {
+  overflow: hidden;
+  padding: 3em;
+}
+
+.snote ul li a {
+  text-decoration: none;
+  color: #000;
+  background: #ffc;
+  display: block;
+  height: 15em;
+  width: 12em;
+  padding: 1em;
+  -moz-box-shadow: 5px 5px 7px rgba(33, 33, 33, 1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform: rotate(-6deg);
+  -moz-transition: -moz-transform 0.15s linear;
+  -o-transition: -o-transform 0.15s linear;
+  -webkit-transition: -webkit-transform 0.15s linear;
+}
+
+.snote ul li:nth-child(even) a {
+  -o-transform: rotate(4deg);
+  -webkit-transform: rotate(4deg);
+  -moz-transform: rotate(4deg);
+  position: relative;
+  top: 5px;
+  background: #cfc;
+}
+
+.snote ul li:nth-child(3n) a {
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  position: relative;
+  top: -5px;
+  background: #ccf;
+}
+
+.snote ul li:nth-child(5n) a {
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
+  position: relative;
+  top: -10px;
+  background: #fcf;
+}
+
+.snote ul li a:hover,
+ul li a:focus {
+  -moz-box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.418);
+  -webkit-box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.356);
+  box-shadow: 10px 10px 7px rgba(33, 33, 33, 0.404);
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -o-transform: scale(1.25);
+  position: relative;
+  z-index: 5;
+}
+
+.snote ul li {
+  margin: 1em;
+  float: left;
+}
+
+.snote ul li .icon:hover {
+  background-color: transparent;
+}
+
+.snote ul li h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 0px;
+  font-family: "Roboto Slab";
+  text-align: center;
+  color: #000;
+}
+
+.snote ul li .icon {
+  margin: 0.5rem;
+
+  /* padding: 0.5rem; */
+}
+
+.hide {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: black;
+  color: white;
+  margin-bottom: 5px;
+  font-size: 0.7rem;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s, opacity 0.5s linear;
+  transition: visibility 0s, opacity 0.5s linear;
+  text-align: center;
+}
+
+.icon:hover + .hide {
+  display: block;
+}
+
+.icon_container {
+  position: relative;
+  float: left;
+}
+
+.icon_container:hover {
+  cursor: pointer;
+}
+
+.icon_container:hover div {
+  width: 5rem;
+  height: auto;
+  /* padding: 8px 15px; */
+  visibility: visible;
+  opacity: 0.7;
+}
+
+/* Media Querie */
+
+@media only screen and (max-width: 1200px) {
+    .sticker_container {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .snote {
+        max-width: 80vw;
+        display: flex;
+        justify-content: center;
+        
+      }
+      
+      .snote ul li a{
+        width: 7em;
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+      }
+      .snote ul {
+        overflow: hidden;
+        
+      }
+
+}

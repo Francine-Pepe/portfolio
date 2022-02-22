@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react';
 // import { NavLink } from 'react-router-dom';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
-import { Link } from '@mui/material';
+import { Link, Menu } from '@mui/material';
 
 
 
@@ -22,7 +22,7 @@ const [value, setValue] = React.useState('recents');
         <div className="navigation_container">
             <div className="navbar_header">
                 <div className="header_navigation">
-                <BottomNavigation sx={{ width: 300, height: 80, backgroundColor: '#44CFCB'  }} value={value} onChange={handleChange}>
+                <BottomNavigation sx={{ width: 550, height: 80, backgroundColor: '#44CFCB'  }} value={value} onChange={handleChange}>
                 <BottomNavigationAction
                     sx={{
                         "& .MuiBottomNavigationAction-root, .Mui-selected, svg": {
@@ -54,7 +54,7 @@ const [value, setValue] = React.useState('recents');
                      }}
                         label="Skills"
                         value="skills"
-                        icon={<Icon icon="et:gears" color="#f8f8f8" width="40" height="40" />}
+                        icon={<Icon icon="la:pencil-ruler" color="#f8f8f8" width="40" height="40" />}
                         />
                     <BottomNavigationAction
                     sx={{
@@ -77,18 +77,19 @@ const [value, setValue] = React.useState('recents');
                         <li><NavLink to="/">Contact</NavLink></li>
                     </ul> */}
                 </div>
-                <div className="social_media">
-                    <div className="social_icons">
-                        <Icon className="social_icons_icons" icon="akar-icons:github-fill" color="#F8F8F8" width="30" height="30" />
-                        <Icon className="social_icons_icons" icon="entypo-social:linkedin-with-circle" color="#F8F8F8" width="30" height="30" /> 
-                        <Icon className="social_icons_icons" icon="ant-design:behance-circle-filled" color="#F8F8F8" width="30" height="30" /> 
-                        <Icon className="social_icons_icons" icon="entypo-social:instagram-with-circle" color="#F8F8F8" width="30" height="30" /> 
-                    </div>                 
-                </div>
+                
                 
             </div>
+            
         </div>
-        
+        <div className="social_media">
+                    <div className="social_icons">
+                        <Icon className="social_icons_icons" icon="akar-icons:github-fill" color="#5987b6" width="30" height="30" />
+                        <Icon className="social_icons_icons" icon="entypo-social:linkedin-with-circle" color="#5987b6" width="30" height="30" /> 
+                        <Icon className="social_icons_icons" icon="ant-design:behance-circle-filled" color="#5987b6" width="30" height="30" /> 
+                        <Icon className="social_icons_icons" icon="entypo-social:instagram-with-circle" color="#5987b6" width="30" height="30" /> 
+                    </div>                 
+                </div>
         
         
         </>
