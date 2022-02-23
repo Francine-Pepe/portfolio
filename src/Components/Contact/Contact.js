@@ -46,9 +46,9 @@ export default function Contact () {
           
           <form  className="form_box" onSubmit={sendEmail}>
             <label>Name:</label>
-            <input type="text" name="user_name" label="name" />
+            <input type="text" name="user_name" />
             <label>Email:</label>
-            <input type="email" name="user_email" label="email" />
+            <input type="email" name="user_email" />
             <label>Message:</label>
             <textarea name="message" />
             <button type="submit" value="Send" ><Icon icon="fluent:send-28-regular" color="#F8F8F8" width="40" height="35" /></button>
