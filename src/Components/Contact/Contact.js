@@ -1,4 +1,4 @@
-// import React, { useRef } from 'react';
+import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { Container } from '@mui/material';
 import './Contact.css';
@@ -7,18 +7,18 @@ import { Icon } from '@iconify/react';
 
 export default function Contact () {
   
-  // const form = useRef();
+  const form = useRef();
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm('service_5gpnfnk', 'template_sgmp2xj', e.target, 'user_YeUwC6WQsK1xiMGVBrKzC')
+    emailjs.sendForm('service_5gpnfnk', 'template_sgmp2xj', form.current, 'user_YeUwC6WQsK1xiMGVBrKzC')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
           console.log(error.text);
       });
-      e.target.reset();
+      form.current.reset();
           alert('Thanks for contacting me! I will reply you soon! 📧') 
           
   };
