@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b925f77e.css",
-    "main.js": "/portfolio/static/js/main.c02c229b.js",
+    "main.css": "/portfolio/static/css/main.4d8ebeac.css",
+    "main.js": "/portfolio/static/js/main.19ba4332.js",
     "static/js/787.86e70ff7.chunk.js": "/portfolio/static/js/787.86e70ff7.chunk.js",
     "static/media/photo_Francine.png": "/portfolio/static/media/photo_Francine.8328b2bb1ea2d449b361.png",
     "static/media/photo_Francine_small.png": "/portfolio/static/media/photo_Francine_small.c6c6a69dedbbddbeaa56.png",
@@ -10,12 +10,12 @@
     "static/media/BF_Logo.png": "/portfolio/static/media/BF_Logo.5236e789d01febee9669.png",
     "static/media/photopedia_logo_transparent.png": "/portfolio/static/media/photopedia_logo_transparent.6bb6b296890e641bc512.png",
     "index.html": "/portfolio/index.html",
-    "main.b925f77e.css.map": "/portfolio/static/css/main.b925f77e.css.map",
-    "main.c02c229b.js.map": "/portfolio/static/js/main.c02c229b.js.map",
+    "main.4d8ebeac.css.map": "/portfolio/static/css/main.4d8ebeac.css.map",
+    "main.19ba4332.js.map": "/portfolio/static/js/main.19ba4332.js.map",
     "787.86e70ff7.chunk.js.map": "/portfolio/static/js/787.86e70ff7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b925f77e.css",
-    "static/js/main.c02c229b.js"
+    "static/css/main.4d8ebeac.css",
+    "static/js/main.19ba4332.js"
   ]
 }
