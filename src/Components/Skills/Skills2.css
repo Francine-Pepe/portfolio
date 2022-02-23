@@ -1,12 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 * {
   box-sizing: border-box;
 }
 
+.skills_parag {
+  display: flex;
+  width: 100vw;
+  height: auto;
+  justify-content: center;
+  font-family: 'Roboto Slab';
+  font-size: 1.3rem;
+}
 .sticker_container {
   width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
+  
 }
 
 .sticker_container hr {
@@ -20,12 +31,15 @@
   justify-content: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  
 }
+
 
 .snote {
   max-width: 80vw;
   display: flex;
   justify-content: center;
+  
 }
 
 .snote h2,
@@ -42,6 +56,8 @@ li {
 .snote ul {
   overflow: hidden;
   padding: 3em;
+  
+  
 }
 
 .snote ul li a {
@@ -61,6 +77,7 @@ li {
   -moz-transition: -moz-transform 0.15s linear;
   -o-transition: -o-transform 0.15s linear;
   -webkit-transition: -webkit-transform 0.15s linear;
+  /* z-index: -1; */
 }
 
 .snote ul li:nth-child(even) a {
@@ -99,12 +116,13 @@ ul li a:focus {
   -moz-transform: scale(1.25);
   -o-transform: scale(1.25);
   position: relative;
-  z-index: 5;
+  
 }
 
 .snote ul li {
   margin: 1em;
   float: left;
+  
 }
 
 .snote ul li .icon:hover {
@@ -198,8 +216,9 @@ ul li a:focus {
     }
 }
 
-@media only screen (max-width: 966px) {
-  .snote ul li a{
+@media only screen and (max-width: 966px) {
+  
+  .snote ul li a {
     width: 8.5em;
     height: 10.5em;
     flex-direction: column;
