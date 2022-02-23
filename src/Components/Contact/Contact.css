@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
 * {
     box-sizing: border-box;
   }
@@ -7,6 +9,12 @@ body {
     height: auto;
 }
 
+.background_container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    
+}
 .contact_header {
     width: 100%;
     display: flex;
@@ -29,10 +37,10 @@ body {
 }
 
 .contact_container {
-    width: 100vw;
-    height: 50vh;
+    max-width: 100%;
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     
 }
@@ -41,7 +49,7 @@ body {
     width: 45vw;
     display: flex;
     flex-direction: column;
-    margin-top: 3rem;
+    /* margin-top: 3rem; */
 }
 
 .form_box input {
@@ -85,14 +93,19 @@ body {
 .postit_text  {
     font-family: Sacramento;
     font-size: 1.7rem;
-    position: absolute;
-    z-index: 1;
-    left: 9rem;
+    z-index: -1;
+    margin-top: -6rem;
 }
-/* 
-@media only screen and (min-width: 768px) and (max-width: 980px) {
-    .contact_header {
-        margin-top: 0;
-    }
 
-} */
+/* Media Querie */
+
+@media only screen and (max-width: 768px) {
+    .contact_container {
+        max-width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 1rem;
+    }
+}

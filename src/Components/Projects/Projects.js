@@ -77,12 +77,14 @@ export default function Projects() {
   
   return (
     <>
-    <header className="contact_header" style={{ marginTop: '16rem'}}>
+    <header className="contact_header" id='projects' style={{ marginTop: '16rem'}}>
           <hr />
           <Icon icon="ic:outline-computer" color="#5987b6" width="50" height="50" />
           <h3>Projects</h3>
           <hr />
       </header>
+
+
     <div className="cards_container">
     
       <div className="card_box" >
@@ -127,8 +129,8 @@ export default function Projects() {
                 {projects.description}
               </Typography>
               <hr className="line"/>
-              <button className="visit_button"><a href={projects.link} target="_blank" >VISIT</a></button>
-              <button className="visit_button"><a href={projects.github} target="_blank">REPO</a></button>
+              <button className="visit_button"><a href={projects.link} target="_blank" rel="noreferrer noopener">VISIT</a></button>
+              <button className="visit_button"><a href={projects.github} target="_blank" rel="noreferrer noopener">REPO</a></button>
             </CardContent>
             <CardActions disableSpacing>
               <div className="technologies_title" >

@@ -93,6 +93,8 @@ export default function Skills() {
           <h3>Skills</h3>
           <hr />
       </header>
+
+      
       
       <Box  className="skills_container"
         sx={{ flexWrap: 'wrap',
