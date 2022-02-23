@@ -16,14 +16,14 @@ export default function Skills2() {
             <hr />
         </header>
     <div className="sticker_container" >
-        <Paper elevation={3} className="sticker_paper">
+        <Paper elevation={3} className="sticker_paper" >
             <div className="snote">
                 <ul>
                 <li>
                     <a href="/">
                     <h2>Frontend Development</h2><hr />
                     <div className="icon_container">
-                        <Icon icon="logos:html-5" width="60" height="60" className="icon"/>
+                        <Icon icon="logos:html-5" width="60" height="60" className="icon" />
                         <div className="hide">HTML 5</div>
                     </div>
                     <div className="icon_container">
@@ -52,7 +52,7 @@ export default function Skills2() {
                     <a href="/">
                     <h2>Wireframe, Design and Agile</h2><hr />
                     <div className="icon_container">
-                        <Icon icon="cib:adobe-xd" color="#470137" width="55" height="55" className="icon"/>
+                        <Icon icon="cib:adobe-xd" color="#470137" width="55" height="55" className="icon" />
                         <div className="hide">Adobe XD</div>
                     </div>
                     <div className="icon_container">
@@ -87,3 +87,4 @@ export default function Skills2() {
     </>
   );
 }
+

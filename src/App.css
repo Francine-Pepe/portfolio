@@ -1,6 +1,9 @@
-/* body {
-    background-image: url(./Components/Images/white_bg_image.jpg);
-} */
+body {
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
 
 
 

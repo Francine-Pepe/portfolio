@@ -88,9 +88,9 @@ export default function Projects() {
       <div className="card_box" >
       
         <Card sx={{ 
-                    p: 2,
+                    p: 1,
                     display: 'grid',
-                    gridTemplateColumns: { md: '1fr 1fr 1fr' },
+                    gridTemplateColumns: {xl: '1fr 1fr 1fr', lg: '1fr 1fr', md: '1fr 1fr', sm: '1fr' },
                     gap:10 ,
                     margin:10,
                     padding: 10,
