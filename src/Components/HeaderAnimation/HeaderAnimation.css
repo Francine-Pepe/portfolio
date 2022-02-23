@@ -23,6 +23,7 @@
     transform: translate3d(0, 0, 0);
   }
 }
+
 .animated-title {
   color: #222;
   font-family: "Roboto Slab";
@@ -32,7 +33,7 @@
   position: absolute;
   top: 60%;
   transform: translate(-50%, -50%);
-  width: 90vmin;
+  width: 90vw;
 }
 .animated-title > div {
   height: 50%;
@@ -40,8 +41,8 @@
   position: absolute;
   width: 100%;
 }
-/* 
-.dot1,
+
+/* .dot1,
 .dot2,
 .dot3,
 .dot4,
@@ -91,11 +92,13 @@
 }
 .animated-title > div div span {
   display: flex;
+  flex-direction: row;
 }
+
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #153b61;
   top: 0;
-  
+  display: flex;
 }
 .animated-title > div.text-top div {
   animation: showTopText 1s;
@@ -128,7 +131,7 @@
 
 .self_description p {
   font-family: 'Roboto Slab';
-  font-size: 25px;
+  font-size: 1.7rem;
   text-align: center;
   color: #153B61;
 }
@@ -145,7 +148,7 @@
   /* box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671); */
 }
 
-.my_work {
+.my_work  {
   position: relative;
   top: 100%;
   font-family: 'Roboto Slab';
@@ -167,15 +170,186 @@
 /* Media Queries */
 
 @media only screen and (min-width: 1200px) {
-  .animated-title {
-    color: #222;
-    font-family: "Roboto Slab";
-    font-weight: 200;
+  .animated-title {    
     height: 90vmin;
     left: 30%;
     position: absolute;
     top: 60%;
     transform: translate(-50%, -50%);
     width: 90vmin;
+    /* margin-left: 2rem; */
+  }
+}
+
+/* @media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  .animated-title {
+    height: 90vmin;
+    left: 32%;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    margin-left: 2rem;
+  }
+} */
+
+@media only screen and (min-width: 980px) and (max-width: 1200px) {
+  .animated-title {
+    height: 80vmin;
+    left: 40%;
+    position: absolute;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    width: 90vmin;
+    /* margin-left: 2rem; */
+  }
+  .self_description p {
+    font-size: 1.5rem;
+  }
+
+  .self_description {
+    position: absolute;
+    top: 87%;
+    left: 8%;
+  }
+
+  .animated-title > div div {
+    font-size: 9vmin;
+    padding: 2vmin 0;
+    position: absolute;
+    
+  }
+  .photo_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('./../Images/photo_Francine_small.png');
+    background-position: center;
+    
+    position: relative;
+    left: 60%;
+    margin-top: 5%;
+    /* box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671); */
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #153b61;
+    top: 0;
+    display: flex;
+    width: 80%;
+  }
+  .my_work p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+  .animated-title {
+    height: 80vmin;
+    left: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vmin;
+    /* margin-left: 2rem; */
+  }
+  .self_description p {
+    font-size: 1.5rem;
+  }
+
+  .self_description {
+    position: absolute;
+    top: 80%;
+    left: 13%;
+  }
+
+  .animated-title > div div {
+    font-size: 7vmin;
+    padding: 2vmin 0;
+    position: absolute;
+   
+  }
+  .photo_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('./../Images/photo_Francine_small.png');
+    background-position: center;
+    display: flex;
+    position: relative;
+    left: 60%;
+    margin-top: 5%;
+    /* box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671); */
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #153b61;
+    top: 0;
+    display: flex;
+    width: 70%;
+  }
+  .my_work p {
+    font-size: 22px;
+  }
+  .my_work  {
+   display: none;
+    
+  }
+  .my_work img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 483px) and (max-width: 768px) {
+  .animated-title {
+    height: 80vmin;
+    left: 45%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75vmin;
+    /* margin-left: 2rem; */
+  }
+  .self_description p {
+    font-size: 1.5rem;
+  }
+
+  .self_description {
+    position: absolute;
+    top: 75%;
+    /* left: 5%; */
+  }
+
+  .animated-title > div div {
+    font-size: 7vmin;
+    padding: 2vmin 0;
+    position: absolute;
+   
+  }
+  .photo_image {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('./../Images/photo_Francine_small.png');
+    background-position: center;
+    display: flex;
+    position: relative;
+    left: 60%;
+    margin-top: 5%;
+    /* box-shadow: 10px 10px 5px  rgba(0, 0, 0, 0.671); */
+  }
+  .animated-title > div.text-top {
+    border-bottom: 1vmin solid #153b61;
+    top: 0;
+    display: flex;
+    width: 70%;
+  }
+  .my_work p {
+    font-size: 22px;
+  }
+  .my_work  {
+   display: none;
+    
+  }
+  .my_work img {
+    display: none;
   }
 }

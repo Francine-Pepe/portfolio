@@ -5,13 +5,13 @@
 body {
     width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation_container {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 3%;
-    
+    margin-top: 3%; 
     
 }
 .navbar_header {

@@ -9,8 +9,8 @@ return (
         <div class="text-top">
             <div>
                 <span>Hi. My name is Francine</span>
-                {/* <span></span> */}
-                {/* <span class="dot1"></span>
+                {/* <span></span>
+                <span class="dot1"></span>
                 <span class="dot2"></span>
                 <span class="dot3"></span>
                 <span class="dot4"></span>

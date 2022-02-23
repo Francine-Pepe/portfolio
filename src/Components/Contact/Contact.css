@@ -41,6 +41,7 @@ body {
     width: 45vw;
     display: flex;
     flex-direction: column;
+    margin-top: 3rem;
 }
 
 .form_box input {
@@ -87,6 +88,11 @@ body {
     position: absolute;
     z-index: 1;
     left: 9rem;
-    
-    
 }
+/* 
+@media only screen and (min-width: 768px) and (max-width: 980px) {
+    .contact_header {
+        margin-top: 0;
+    }
+
+} */
