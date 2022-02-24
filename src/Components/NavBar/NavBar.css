@@ -67,7 +67,7 @@ li {
     margin-left: 20px;
     margin-right: 20px;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     
 }
 
@@ -113,6 +113,31 @@ li a:hover {
 }
 
 /* Media query */
+
+@media only screen and (max-width: 768px) {
+        
+    .navbar_header {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #44CFCB;
+        align-items: center;
+        box-shadow: 10px 10px 5px  #86c5c3;   
+        /* position: fixed; */
+        z-index: 1;
+        align-content: center;
+    }
+
+    .header_navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+
 
 @media only screen and (max-width: 620px) {
     .navbar_header {

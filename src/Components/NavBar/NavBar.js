@@ -121,9 +121,19 @@ export default function NavBar() {
                   Contact
                 </a>
               </li>
+              <li className="nav-item">
+                <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:913db4c9-d862-35b8-9f6a-729cd31110cc" target="_blank" rel="noreferrer noopener">
+                  <Icon
+                    icon="fluent:document-text-20-regular"
+                    color="#f8f8f8"
+                    width="25"
+                    height="25"
+                  />
+                  Resumé
+                </a>
+              </li>
             </ul>
           </div>
-          
         </div>
       </div>
       <div className="social_media">

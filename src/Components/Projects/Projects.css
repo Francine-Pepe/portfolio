@@ -62,6 +62,11 @@ body {
     display: flex;
 }
 
+.button_container {
+    display: flex;
+    justify-content: center;
+}
+
 .visit_button {
     width: 5rem;
     height: 2rem;
