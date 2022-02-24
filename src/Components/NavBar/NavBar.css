@@ -105,7 +105,6 @@ li a:hover {
     flex-direction: column;
     margin-top:38rem;
     position: fixed;
-    z-index: -1;
 }
 
 .social_icons_icons {
