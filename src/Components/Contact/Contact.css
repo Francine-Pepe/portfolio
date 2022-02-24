@@ -92,10 +92,12 @@ body {
 }
 
 .postit_text  {
+    margin-top: -2rem;
     font-family: Sacramento;
     font-size: 1.7rem;
     z-index: -1;
-    margin-top: -6rem;
+    display: flex;
+    justify-content: center;
 }
 
 /* Media Querie */
@@ -105,7 +107,6 @@ body {
         max-width: 100%;
         height: auto;
         display: flex;
-        flex-direction: column-reverse;
         align-items: center;
         padding-top: 1rem;
     }
@@ -115,5 +116,13 @@ body {
         flex-direction: column;
         /* margin-top: 3rem; */
         
+    }
+    .postit_text  {
+        margin-top: -2rem;
+        font-family: Sacramento;
+        font-size: 1rem;
+        z-index: -1;
+        display: flex;
+        justify-content: center;
     }
 }

@@ -32,6 +32,9 @@ export default function Contact () {
           <h3>Contact</h3>
         <hr />
       </header>
+      <div className='postit_text'>
+              <p>Did you enjoy my work and would like to <br/> develop a project? Just drop me a line! <br /> Francine 🙂</p>
+          </div>
       <div className="background_container">
         <Container fluid className="contact_container mt-5"
           sx={{
@@ -53,9 +56,7 @@ export default function Contact () {
             <textarea name="message" />
             <button type="submit" value="Send" ><Icon icon="fluent:send-28-regular" color="#F8F8F8" width="40" height="35" /></button>
           </form>
-          <div className='postit_text'>
-              <p>Did you enjoy my work <br /> and would <br />like to develop a project?<br />Just drop me <br /> a line! <br /> Francine 🙂</p>
-          </div>
+          
         </Container>
         
       </div>

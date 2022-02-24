@@ -4,6 +4,7 @@ import NavBar from './Components/NavBar/NavBar';
 import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact';
 import Skills2 from './Components/Skills/Skills2';
+import Footer from './Components/Footer/Footer';
 // import Parallax from './Components/Parallax/Parallax';
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <Skills2 />
         <Contact />
+        <Footer />
       {/* </ParallaxProvider> */}
     </div>
   );
