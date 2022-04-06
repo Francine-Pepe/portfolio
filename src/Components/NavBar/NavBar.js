@@ -122,7 +122,7 @@ export default function NavBar() {
                 </a>
               </li>
               <li className="nav-item">
-                <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:61b90288-2c2c-3eca-875e-86fbe0308bad" target="_blank" rel="noreferrer noopener">
+                <a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:9ce29266-8465-332f-a852-f98c802efad6" target="_blank" rel="noreferrer noopener">
                   <Icon
                     icon="fluent:document-text-20-regular"
                     color="#f8f8f8"
