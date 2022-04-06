@@ -111,6 +111,7 @@ export default function Projects() {
               margin: 10,
               padding: 10,
               border: "none",
+              
             }}
           >
             {projects.map((projects, id, item) => (
@@ -121,6 +122,7 @@ export default function Projects() {
                     boxShadow: "5px 5px 5px 5px #E8E8E8",
                     shadowRadius: 2,
                     elevation: 10,
+                    
                   }}
                 >
                   <Typography
