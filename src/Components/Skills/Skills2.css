@@ -298,4 +298,13 @@ ul li a:focus {
   .snote ul li h2 {
   font-size: 0.9rem;
   }
+
+  .skills_parag {
+    display: flex;
+    width: 70vw;
+    height: auto;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+    font-size: 1.3rem;
+  }
 }

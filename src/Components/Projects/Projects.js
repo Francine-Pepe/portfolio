@@ -12,6 +12,7 @@ import bespoke from "./../Images/BF_Logo.png";
 import photopedia from "./../Images/photopedia_logo_transparent.png";
 import healthyLife from "./../Images/Healthy Life-logos_transparent.png";
 import easyPeasy from "./../Images/easy_peasy-logo_transparent.png";
+import todolist from './../Images/checklist.png';
 import "./Projects.css";
 import { Icon } from "@iconify/react";
 
@@ -35,6 +36,15 @@ export default function Projects() {
   };
 
   const projects = [
+    {
+      id: "4",
+      name: "Todo List",
+      description: "Basic but useful Todo List.",
+      image: todolist,
+      github: "https://github.com/Francine-Pepe/todo",
+      link: "https://francine-pepe.github.io/todo/",
+      technologies: "HTML 5 |  CSS 3  |  React  |  JavaScript",
+    },
     {
       id: "0",
       name: "Bespoke Fashion",
@@ -75,6 +85,7 @@ export default function Projects() {
       link: "",
       technologies: "HTML 5 |  CSS 3  |  Bootstrap  |  Adobe XD",
     },
+    
   ];
 
   return (
@@ -100,16 +111,20 @@ export default function Projects() {
           <Card
             sx={{
               p: 1,
-              display: "grid",
-              gridTemplateColumns: {
-                xl: "1fr 1fr 1fr",
-                lg: "1fr 1fr",
-                md: "1fr 1fr",
-                sm: "1fr",
-              },
-              gap: 10,
-              margin: 10,
-              padding: 10,
+              width: '90vw',
+              display: "flex",
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              alignItems: 'center',
+              // gridTemplateColumns: {
+              //   xl: "1fr 1fr 1fr",
+              //   lg: "1fr 1fr",
+              //   md: "1fr 1fr",
+              //   sm: "1fr",
+              // },
+              gap: '5em',
+              margin: '5em',
+              padding: '2em',
               border: "none",
               
             }}
